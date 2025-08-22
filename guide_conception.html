@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conception E-commerce Personnalisé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            margin: 1rem auto;
+            padding: 1rem;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .tools {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Conception Application E-commerce Personnalisée</h1>
+</header>
+
+<section>
+    <h2>1. Personas</h2>
+    <table>
+        <tr><th>Nom</th><th>Age</th><th>Profession</th><th>Besoins</th><th>Objectif</th></tr>
+        <tr><td>Fatiha</td><td>25</td><td>Étudiante</td><td>Acheter un t-shirt personnalisé</td><td>Trouver rapidement un design sympa et l'acheter</td></tr>
+        <tr><td>Amine</td><td>35</td><td>Graphiste</td><td>Vendre ses designs sur mugs/t-shirts</td><td>Gérer ses créations et commandes</td></tr>
+        <tr><td>Carole</td><td>40</td><td>Mère de famille</td><td>Offrir un cadeau personnalisé</td><td>Créer et commander un produit unique</td></tr>
+    </table>
+    <p class="tools">Outils : Personas.io, Xtensio, Miro</p>
+</section>
+
+<section>
+    <h2>2. Identification des besoins</h2>
+    <h3>Utilisateur</h3>
+    <ul>
+        <li>Créer un compte / se connecter</li>
+        <li>Parcourir les articles</li>
+        <li>Personnaliser produit (texte, image, couleur, taille)</li>
+        <li>Ajouter au panier</li>
+        <li>Passer commande et paiement sécurisé</li>
+        <li>Suivi des commandes</li>
+    </ul>
+    <h3>Administrateur</h3>
+    <ul>
+        <li>Gestion des produits</li>
+        <li>Gestion des commandes</li>
+        <li>Gestion des utilisateurs</li>
+        <li>Gestion des promotions / codes promo</li>
+    </ul>
+    <p class="tools">Outils : Trello, Notion, Jira pour gestion des besoins</p>
+</section>
+
+<section>
+    <h2>3. Carte mentale des fonctionnalités</h2>
+    <ul>
+        <li>Utilisateur
+            <ul>
+                <li>Compte</li>
+                <li>Produits</li>
+                <li>Personnalisation</li>
+                <li>Panier</li>
+                <li>Commande & Paiement</li>
+                <li>Suivi commande</li>
+            </ul>
+        </li>
+        <li>Administrateur
+            <ul>
+                <li>Gestion produits</li>
+                <li>Gestion commandes</li>
+                <li>Gestion utilisateurs</li>
+                <li>Promotions et statistiques</li>
+            </ul>
+        </li>
+        <li>Backend / Système
+            <ul>
+                <li>Base de données</li>
+                <li>Serveur / API</li>
+                <li>Sécurité</li>
+                <li>Notifications</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="tools">Outils : MindMeister, XMind, Miro</p>
+</section>
+
+<section>
+    <h2>4. Rôles et privilèges</h2>
+    <table>
+        <tr><th>Rôle</th><th>Privilèges</th></tr>
+        <tr><td>Utilisateur</td><td>Voir produits, personnaliser, commander, suivre commande</td></tr>
+        <tr><td>Administrateur</td><td>Ajouter/modifier/supprimer produits, gérer commandes, gérer utilisateurs, consulter statistiques</td></tr>
+    </table>
+    <p class="tools">Outils : Lucidchart, Draw.io pour diagrammes de rôles et permissions</p>
+</section>
+
+<section>
+    <h2>5. Backend & Base de données</h2>
+    <ul>
+        <li>Backend: Node.js (Express) ou Python (Django / Flask)</li>
+        <li>API: REST ou GraphQL</li>
+        <li>Auth: JWT ou sessions</li>
+        <li>Paiement: Stripe ou PayPal</li>
+        <li>Base de données: PostgreSQL ou MySQL</li>
+        <li>Tables principales: utilisateurs, produits, commandes, personnalisation</li>
+    </ul>
+    <p class="tools">Outils : VS Code, Postman pour API, pgAdmin/MySQL Workbench pour DB</p>
+</section>
+
+<section>
+    <h2>6. Wireframe / Maquette</h2>
+    <ul>
+        <li>Page d’accueil: liste produits, barre recherche, catégories</li>
+        <li>Page produit: aperçu + personnalisation</li>
+        <li>Panier: récapitulatif + bouton commander</li>
+        <li>Paiement: formulaire sécurisé</li>
+        <li>Tableau admin: gestion produits, commandes, utilisateurs</li>
+    </ul>
+    <p class="tools">Outils : Figma, Adobe XD, Balsamiq</p>
+</section>
+
+<section>
+    <h2>7. Développement, tests et mise en production</h2>
+    <ul>
+        <li>Développement frontend et backend</li>
+        <li>Tests unitaires et fonctionnels</li>
+        <li>Tests de sécurité et performance</li>
+        <li>Mise en production: hébergement serveur + base de données</li>
+    </ul>
+    <p class="tools">Outils : Git/GitHub, Jest/Mocha pour tests, Docker, Heroku/Vercel/AWS pour déploiement</p>
+</section>
+
+</body>
+</html>
